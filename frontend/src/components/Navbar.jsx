@@ -36,8 +36,11 @@ const Navbar = () => {
                 <hr className='border-none outline-none h-0.5 bg-primary w-3/5 m-auto hidden'/>
             </NavLink>
        </ul>
+
        <div className='flex items-center gap-4'>
-        {
+        <a href='https://hospital-management-admin.vercel.app/' target='_blank'> <button className='border border-gray-600 rounded-full px-6 py-1.5 text-sm hover:bg-primary hover:text-white hover:border-blue-400 transition-all duration-400'>Admin</button>
+        </a>
+      {   
             token && userData
             ?
             <div className='flex items-center gap-2 cursor-pointer group relative'>
